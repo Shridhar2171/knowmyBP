@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="animate-fade-in space-y-6">
+
+    <h2 class="text-4xl font-bold text-indigo-700">About This Project</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl shadow-xl p-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h3 class="text-2xl font-semibold text-purple-600 flex items-center mb-3">
+                <i data-feather="activity" class="mr-2"></i> Project Mission
+            </h3>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                This system predicts blood pressure using Machine Learning and provides
+                clear guidance to maintain a healthy lifestyle.
+            </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl shadow-xl p-6 transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <h3 class="text-2xl font-semibold text-purple-600 flex items-center mb-3">
+                <i data-feather="cpu" class="mr-2"></i> Technology Stack
+            </h3>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                • Flask (Backend) <br>
+                • Machine Learning Model (BP Prediction) <br>
+                • Tailwind CSS (UI Design) <br>
+                • Chart.js (BP Visualization)
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<script>feather.replace()</script>
+{% endblock %}
